@@ -1,0 +1,53 @@
+.navbar {
+    height: 60px;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav--logo {
+    height: 80%;
+}
+
+.nav--name {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav--logandsign {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav--login {
+    background-color:  white;
+    height: 28px;
+    width: 80px; 
+    color: #7b7b7b;
+    border: solid #7b7b7b 1.5px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav--signup {
+    background-color: #7b7b7b;
+    height: 28px;
+    width: 80px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav--login:hover, .nav--signup:hover {
+    background-color: #ddd;
+    color: black;
+}

@@ -1,0 +1,138 @@
+.shoppinglist {
+    height: 90%;
+    width: 70%;
+    background-color: #f8f8f8; 
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto; 
+}
+
+.shoppinglist--name {
+    height: 40px;
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.shoppinglist--section {
+    display: flex;
+    gap: 20px;
+}
+
+.shoppinglist--items {
+    min-height: 160px;
+    max-height: 80%;
+    width: 60%;
+    border: solid 1px #ddd; 
+    overflow-y: auto;
+    padding: 10px; 
+    background-color: white;
+}
+
+.shoppinglist--item {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 6px;
+    border: solid 1px #eee; 
+    border-radius: 4px;
+    padding: 10px; 
+    background-color: #f9f9f9; 
+}
+
+.shoppinglist--checkbox {
+    height: 20px; 
+    width: 20px;
+    border-radius: 3.2px;
+    border: solid 2px #ccc; 
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.shoppinglist--item--delete {
+    height: 20px; 
+    margin-left: 16px;
+    cursor: pointer;
+    color: #ff6347; 
+}
+
+.shoppinglist--actions {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: space-between;
+    min-height: 440px;
+    max-height: 440px;
+}
+
+.shoppinglist--actions--add-item,
+.shoppinglist--actions--add-user-btn,
+.shoppinglist--actions--filter-btn,
+.shoppinglist--actions--quit-list-btn,
+.changename {
+    border-radius: 4px;
+    border: none; 
+    height: 36px; 
+    width: auto; 
+    cursor: pointer;
+    padding: 8px 16px; 
+    text-align: center; 
+    background-color: #4CAF50; 
+    color: white; ;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    transition: background-color 0.2s; 
+}
+
+.changename {
+    margin-left: 10px;
+}
+
+.shoppinglist--actions--add-item:hover,
+.shoppinglist--actions--add-user-btn:hover,
+.shoppinglist--actions--filter-btn:hover {
+    background-color: #388E3C;
+}
+
+.shoppinglist--actions--quit-list-btn {
+    background-color: #f44336; 
+}
+
+.shoppinglist--actions--quit-list-btn:hover {
+    background-color: #d32f2f; 
+}
+
+.shoppinglist--actions--add-user,
+.shoppinglist--actions--filter-section {
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+}
+
+.shoppinglist--actions--add-user-input {
+    display: flex;
+    gap: 8px; 
+    height: 36px;
+}
+
+.user-input {
+    flex-grow: 1;
+    padding: 8px; 
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: auto; 
+}
+
+.shoppinglist--actions--filter-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.solved {
+    display: flex;
+    align-items: center;
+}
