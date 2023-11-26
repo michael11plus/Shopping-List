@@ -1,6 +1,8 @@
-import './shoppinglist.css';
+import './css/shoppinglist.css';
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import List from './List';
+import Navbar from './Navbar';
 
 const ShoppingList = ({ data }) => {
     const [ nameInput, setNameInput ] = useState("");
@@ -28,14 +30,13 @@ const ShoppingList = ({ data }) => {
 
     return(
         <div className='shoppinglist'>    
-           
+           <Navbar />
        
 
             <div className='shoppinglist--section'>
                 <List />
 
                 <div className='shoppinglist--actions'>
-                    <button className="shoppinglist--actions--add-item">Add Item</button>
                     
                     <div className="shoppinglist--actions--add-user">
                         <h4>Add User</h4>
@@ -58,9 +59,9 @@ const ShoppingList = ({ data }) => {
                         </div>
                         <button className="shoppinglist--actions--filter-btn">Filter</button>
                     </div>
-
-                    <button className="shoppinglist--actions--quit-list-btn">QUIT LIST</button>
-
+                    <Link to='/'>
+                        <button className="shoppinglist--actions--quit-list-btn">QUIT LIST</button>
+                    </Link>
                 </div>
             </div>
 

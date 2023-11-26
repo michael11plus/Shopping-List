@@ -1,18 +1,22 @@
 .navbar {
-    height: 60px;
+    height: 80px; 
     padding: 0px 30px 0px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav--logo {
     height: 80%;
+    cursor: pointer;
 }
 
 .nav--name {
     font-size: 28px;
     font-weight: 700;
+    margin-left: 110px;
 }
 
 .nav--logandsign {
@@ -31,7 +35,6 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .nav--signup {

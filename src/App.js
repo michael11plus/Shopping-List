@@ -1,13 +1,18 @@
-import Navbar from './components/Navbar';
-import ShoppingListSection from './components/ShoppingListSection';
+import Homepage from './components/Homepage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import ShoppingList from './components/ShoppingList';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <ShoppingListSection />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Homepage />}/>
+          <Route path="/:id" element={<ShoppingList />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

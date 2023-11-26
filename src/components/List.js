@@ -61,7 +61,7 @@ const ShoppingManager = () => {
     <div className="shopping-app-container">
       <div className="shopping-list-header">
         { !titleChangeFlag && <h1 className="shopping-list-title">{shoppingListTitle ? shoppingListTitle : "My List"}</h1>}
-        { !titleChangeFlag && <button className="shopping-action-button" onClick={toggleEditMode}>Edit Title</button> }
+        { !titleChangeFlag && <button className="shopping-action-button" onClick={toggleEditMode}></button> }
         { titleChangeFlag && 
           <form onSubmit={handleTitleChange} className="shopping-title-form">
             <input
@@ -85,7 +85,7 @@ const ShoppingManager = () => {
           onChange={(e) => setItemInput(e.target.value)}
           className="shopping-input"
         />
-        <button className="shopping-action-button" onClick={handleAddItem}>Add item</button>
+        <button className="shopping-action-button" onClick={handleAddItem}> + </button>
       </div>
       <ul className="shopping-items-list">
         {shoppingItems.map((item) => (
